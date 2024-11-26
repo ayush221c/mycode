@@ -1,0 +1,46 @@
+<!-- create a survey form 
+ HTML forms are an important part of many websites 
+ create a form for a survey on the topic of your choice 
+
+ include a variety of answere options , including tect feilds , dropdowns .radio buttons
+ ,checkboxes , and a submit button .Don't forget to add a title ,and consider 
+ using CSS to improve the look of your form 
+
+ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title> SURVEY FORM </title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <h1>Online Learning Experience Survey</h1>
+ 
+     <form>
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required><br><br>
+ 
+         <label for="email">Email:</label>
+         <input type="email"   
+  id="email" name="email" required><br><br>
+ 
+         <label>How   
+  satisfied are you with the overall online learning experience?</label><br>
+         <input type="radio" id="very_satisfied" name="satisfaction" value="Very Satisfied">
+         <label for="very_satisfied">Very Satisfied</label>   
+ 
+         <input type="radio" id="satisfied" name="satisfaction" value="Satisfied">
+         <label for="satisfied"> satisfied</label>
+
+         <input type="radio" id="good" name="good" value="good">
+         <label for="good">good</label>
+
+         <input type="radio" id="bad" name="bad" value="bad">
+         <label for="bad">bad</label>
+
+         <input type="radio" id="very " name="very bad">
+         <label for="very bad">very bad</label><br><br>
+
+         <input type="submit" value="Submit">
+ </body>
+ </html>

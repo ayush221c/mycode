@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
  typedef struct n {
-    int  data;
+    int  data;              
     struct n *next;
     struct n *prev;
 }node;
@@ -10,8 +10,7 @@ void display(node*head){
     while (cur!=NULL){
         printf("%d\n",cur->data);
         cur=cur->next;
-    }
-    
+    }   
 }
 int main (){
 

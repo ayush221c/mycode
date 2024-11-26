@@ -8,7 +8,7 @@ struct node
     int data;
     struct node *next;
 };
-int linkedlisttraversal(struct node* ptr)
+void linkedlisttraversal(struct node* ptr)
 {
     while (ptr !=NULL)
     {
@@ -16,22 +16,19 @@ int linkedlisttraversal(struct node* ptr)
         ptr = ptr->next;
     }
 }
-//inseting an element at the beggining of the linked list 
-struct node* insertatfirst(struct node* head,int data){
-    struct node* ptr =(struct node*)malloc(sizeof(struct node));
-    ptr->next=head;
-    ptr->data=data;
-    return ptr;
-    }
-
-     
-int main()
+// //inseting an element at the beggining of the linked list 
+// struct node* insertatfirst(struct node* head,int data){
+//     struct node* ptr =(struct node*)malloc(sizeof(struct node));
+//     ptr->next=head;
+//     ptr->data=data;
+//     return ptr;
+// }
+    int main()
 {
     struct node *head;
     struct node *second;
     struct node *third;
     struct node *fourth;
-
     // allocate memory for nodes in the linked list
     // dynamic memory allocation
     head = (struct node *)malloc(sizeof(struct node));   // size of struct node
@@ -56,7 +53,6 @@ int main()
     fourth->next = NULL;
 
     linkedlisttraversal(head);
-   head= insertatfirst(head,668899);
-   linkedlisttraversal(head);
+//   linkedlisttraversal(head);
         return 0;
 }
